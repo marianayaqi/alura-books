@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,9 @@
 
 <body>
    <header class="cabeçalho">
+        <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -43,7 +45,7 @@
 
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opções__rotulo">
             <li class="opcoes__item">Categorias</li>
             </label>
 
@@ -70,9 +72,14 @@
         </ul>
 
         <div class="container">
-            <a href="#"><img src="./img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
-            <a href="#"><img src="./img/Compras.svg" alt="Carrinho de Compras" class="container__imagem"></a>
-            <a href="#"><img src="./img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#"><img src="./img/Favoritos.svg" alt="Meus Favoritos"             class="container__imagem container__imagem-transparente"></a>
+            <a href="#"><img src="./img/Compras.svg" alt="Carrinhos de Compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+            <a href="#"><img src="./img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+            <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
    </header>
    <section class="banner">
@@ -84,7 +91,8 @@
    <section class="carrossel">
     <h2 class="carrossel__titulo">Novos lançamentos</h2>
     <!-- Slider main container -->
-<div class="swiper">
+    <div class="carrossel__container">
+    <div class="swiper">
     <!-- Additional required wrapper -->
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -112,7 +120,6 @@
             <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
             <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
             <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google</p>
-
         </div>
         <!-- 2° Coluna -->
         <img src="./img/Angular.svg" class="descricao__imagem" alt="Angular">
@@ -128,29 +135,37 @@
         <a href="#" class="botoes__ancora">Saiba mais</a>
     </div>
   </div>
+  </div>
 </section>
 
 <section class="carrossel">
     <h2 class="carrossel__titulo">Mais vendidos</h2>
-    
+     <!-- Slider main container -->
+     <div class="carrossel__container">
 <div class="swiper">
-   
-        <div class="swiper-pagination"></div>
+    <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="./img/Meam.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-      <div class="swiper-slide"><img src="./img/Nodejs.svg" alt="Livro sobre liderança em design da alura books"></div>
-      <div class="swiper-slide"><img src="./img/MetricasAgeis.svg" alt="Livro sobre javascript assertivo da alura books"></div>
-      <div class="swiper-slide"><img src="./img/Guia Front-end.svg" alt="Livro Guia Front end"></div>
-      <div class="swiper-slide"><img src="./img/Portugol.svg" alt="Livro sobre Portugol"></div>
-      <div class="swiper-slide"><img src="./img/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
+        <div class="swiper-slide"><img src="./img/Meam.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="./img/Nodejs.svg" alt="Livro sobre liderança em design da alura books"></div>
+        <div class="swiper-slide"><img src="./img/MetricasAgeis.svg" alt="Livro sobre javascript assertivo da alura books"></div>
+        <div class="swiper-slide"><img src="./img/Guia Front-end.svg" alt="Livro Guia Front end"></div>
+        <div class="swiper-slide"><img src="./img/Portugol.svg" alt="Livro sobre Portugol"></div>
+        <div class="swiper-slide"><img src="./img/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
     </div>
 
+     <!-- If we need navigation buttons -->
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+ </div>
+
     <div class="card">
-        
+            <!-- 1º linha -->
         <div class="card__descricao">
-            
+             <!-- 1º coluna -->
             <div class="descricao">
                 <img class="descricao__estrelinhas" src="./img/Estrelinhas.svg" alt="Estrelinhas">
                 <h3 class="descricao__titulo">Autora do mês</h3>
@@ -158,19 +173,21 @@
                 <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End</p>
     
             </div>
-           
+           <!-- 2º coluna -->
             <img src="./img/Juliana.svg" class="descricao__imagem__autora" alt="Foto Juliana">
         </div>
-        
+
+        <!-- 2º linha -->
         <div class="card__botoes">
-            
+            <!-- 1º coluna -->
             <ul class="botoes">
                 <li class="botoes__item"><img src="./img/Favoritos.svg" alt="Favoritar Livro"></li>
                 <li class="botoes__item"><img src="./img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
             </ul>
-            
+            <!-- 2º coluna -->
             <a href="#" class="botoes__ancora2">Saiba mais</a>
         </div>
+      </div>
       </div>
 </section>
 
@@ -205,8 +222,10 @@
 </section>
 
 <section class="contato">
+    <div class="contato__descricao">
     <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
     <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    </div>
     <input type="email" placeholder="Cadestre seu e-mail" class="contato__email">
 </section>
 
