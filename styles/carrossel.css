@@ -74,8 +74,6 @@
     text-decoration: none;
 }
 
-
-
 .descricao__estrelinhas {
     padding: 0 0 0.9em 0;
 }
@@ -86,7 +84,6 @@
 
 .botoes__ancora2 {
     background-color: var(--laranja);
-    color: var(--branco);
     padding: 1.5em 2.8em;
     text-decoration: none;
     font-weight: 700;
